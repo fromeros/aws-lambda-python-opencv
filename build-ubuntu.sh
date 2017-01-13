@@ -10,7 +10,7 @@ mkdir -p lambda-package/cv2 build/numpy
 
 # Build numpy
 pip install --install-option="--prefix=$PWD/build/numpy" numpy
-cp -rf build/numpy/lib64/python2.7/site-packages/numpy lambda-package
+cp -rf build/numpy/lib/python2.7/site-packages/numpy lambda-package
 
 # Build OpenCV 3.1
 (
